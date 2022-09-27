@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Joseph's Personal Website</title>
+	<link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="background">
+    <!-- main content within a `grid-container` -->
+    <div class="grid-container">
+        <!-- `grid-x` represents a row -->
+        <div class="grid-x grid-padding-x">
+        </div>
+
+        <!-- Hello?! -->
+        <div class="grid-x grid-padding-x sticky">
+            <div class="cell small-12 large-2 large-offset-1 border" style="background-color: #1a92c9;"><span class="name">Joseph Schoen</span></div>
+            <div class="cell small-6 large-2 border" style="background-color: #1a92c9;"><a href="index.html">Home</a></div>
+            <div class="cell small-6 large-2 border" style="background-color: #1a92c9;"><a href="projects.html">Projects</a></div>
+            <div class="cell small-6 large-2 border" style="background-color: #1a92c9;"><a href="resume.html">Resume</a></div>
+            <div class="cell small-6 large-2 border" style="background-color: #1a92c9;"><a href="fun.html">Fun</a></div>
+        </div>   <!-- `grid-x` represents a row -->
+
+        <br/>
+        <div class="grid-x grid-padding-x">
+            <div class="cell small-12 large-12 center">
+                <h2 class="center_text">Projects</h2>
+            </div>
+            <div class="cell small-12 large-6 center"><img src ="images/optum_project.png", width="90%", height="90%",  alt="Picture of SharePoint to SQL Database through Power Automate"/></div>
+            <div class="cell small-12 large-6 center">
+                <h1 class="center_text">Optum:</h1>
+                <p> During my internship with Optum this past summer, 2022, I had the privillage of working with the Microsoft platform. My team was given the job of 
+                    putting together a system to take information from a Microsoft SharePoint list, to a SQL table in the Optum database. To do this, the team used Power
+                    Automate, a Microsoft application that allows connections between Microsoft softwares to be done automatically. By using Power Automate, the team was
+                    able to draw all the list information in the Microsoft SharePoint, then copy that information to an SQL table in the database. It happened automatically,
+                    which means when there was an update to the Microsoft SharePoint, the SQL table would also get updated, mimicing the Sharepoint list perfectly. This project
+                    allowed the active Microsoft Sharepoint list to exist in an SQL table, that way other services that create reports can pull the SQL table information, and 
+                    render the report with the new information. This was not possible to gather from Microsoft Sharepoint automatically.
+                </p>
+                
+            </div>
+        </div>
+        
+        <br/><br/>
+
+        <div class="grid-x grid-padding-x">
+            <div class="cell small-12 large-6 center"><img src ="images/graphics_project.png", width="90%", height="90%", class="center",  alt="Picture of graphics Website"/></div>
+            <div class="cell small-12 large-6 center">
+                <h1 class="center_text">CISC 420:</h1>
+                <p>Last spring, I had the opprotunity to take a computer science elective, and I chose CISC 420, Computer Graphics. Later in the semester, we started to work on
+                    a project that worked on lighting objects in a three dimensional world, displayed in two dimensions. There was Gouraud lighting and Phong lighting. The image
+                    on the left shows a octagonal prism and a sphere in space, with three lighting sources currently selected in the scene. The lighting affects each object based
+                    on the light source and the color. Also using the W, A, S, and D keys on the keyboard allow you to move the scene around. Using the left and right arrow keys
+                    rotate the scene, making it possible for you to navigate any rendered scene with the light sources!
+
+                </p>
+            </div>
+        </div>
+
+        <br/><br/>
+
+        <div class="grid-x grid-padding-x">
+            <div class="cell small-12 large-6 center"><img src ="images/first_recursion_project.png", width="90%", height="90%",  alt="Picture of graphics Website"/></div>
+            <div class="cell small-12 large-6 center">
+                <h1 class="center_text">CISC 130:</h1>
+                <p>Spring 2021, I took my first computer science course! I was intended to be a mechainical engineer my freshman year, and as I stumbled into this class, I fell in love
+                    with it! With CISC 130, I learned some of my first lines of code and I just knew that this was the career I wanted to go down. So, the image on the left is showing one 
+                    of my lab assignments that spring. That class focused on C++ with Professor Myre, and we were working on recursion! These two functions were to display an array recursively,
+                    and to reverse an arrays contents. This class is truly what sparked my interest in computer science, to the point that I decided to change my major just a week in to the class.
+                    Seeing this project just reminds me of the excitement I had when I realized the power and creativity of coding along with problem solving, meant endless possibilites! 
+
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- include before closing </body> tag -->
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+</body>
+</html>
