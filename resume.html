@@ -8,12 +8,41 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <!-- main content within a `grid-container` -->
-    <div class="grid-container">
+
+    <div class="off-canvas-wrapper hide-for-large">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+            <!-- Close button -->
+            <button class="close-button" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button> 
+
+            <!-- Menu -->
+            <ul class="vertical menu">
+                <li><span class="name" style="color: black;">Joseph Schoen</span></li>
+                <li>><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="fun.html">Fun</a></li>
+            </ul>
+        </div>
+        <!-- Your page content lives here -->
+        <div>
+            <!-- main content within a `grid-container` -->
+            <div class="grid-container">
+                <div class="grid-x grid-padding-x">
+                    <button type="button" class="cell large-auto button blacktext fixed-btn" data-toggle="offCanvas" style="background-color: #1a92c9">Joseph Schoen - Open Menu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-container show-for-large">
         <!-- `grid-x` represents a row -->
         <div class="grid-x grid-padding-x">
         </div>
 
+        <!-- Hello?! -->
         <div class="grid-x grid-padding-x sticky">
             <div class="cell small-12 large-2 large-offset-1 border" style="background-color: #1a92c9;"><span class="name">Joseph Schoen</span></div>
             <div class="cell small-6 large-2 border" style="background-color: #1a92c9;"><a href="index.html">Home</a></div>
@@ -21,6 +50,12 @@
             <div class="cell small-6 large-2 border" style="background-color: #1a92c9;"><a href="resume.html">Resume</a></div>
             <div class="cell small-6 large-2 border" style="background-color: #1a92c9;"><a href="fun.html">Fun</a></div>
         </div>
+    </div>
+
+
+    <div class="grid-container">
+        <!-- `grid-x` represents a row -->
+        <div class="grid-x grid-padding-x">
         <br/>
         <div class="grid-x grid-padding-x border2">
             <!-- Intro Resume -->
@@ -176,11 +211,6 @@
             <div class="cell small-12 large-3">
                 <p class="p_right">September 2021 - Present</p>
             </div>
-
-
-
-
-
         </div>
 
 
@@ -189,5 +219,8 @@
     <!-- include before closing </body> tag -->
     <script src="js/vendor.js"></script>
     <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+        $(document).foundation();
+    </script>
 </body>
 </html>

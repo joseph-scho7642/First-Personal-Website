@@ -76,6 +76,15 @@ h2{
     top: 0;
 }
 
+.fixed-btn{
+    position:fixed;
+    border-radius: 0% 0% 10px 10px;
+    width: 98%;
+    height:6%;
+    top: 0%;
+    text-align: center;
+}
+
 ul{
     color:#ffffff;
     padding-left: 5%;
@@ -84,3 +93,8 @@ ul{
 .resumelink{
     color: #6cb2db;
 }
+
+.button {
+    display: block;
+    text-align: center;
+  }
